@@ -1,0 +1,190 @@
+.content {
+  .right-side {
+    background-color: $white;
+    padding: 0 0 34px 22px;
+  }
+
+  img {
+    border-top: 11px solid $orange;
+    padding: 15px 0 19px;
+  }
+
+  .title {
+    font-weight: bold;
+    padding: 0 0 10px 10px;
+  }
+
+  .txt {
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    word-spacing: 0em;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+
+  .txt-box {
+    margin-left: -23px;
+    width: 108%;
+
+    .txt {
+      font-size: 14px;
+      font-weight: 500;
+      word-spacing: 0em;
+      letter-spacing: 0em;
+      width: 97%;
+      line-height: 17px;
+    }
+
+    .first {
+      padding-bottom: 15px;
+    }
+  }
+
+  .heading {
+    padding-top: 1px;
+    margin-left: 1px;
+    font-size: 14px;
+    padding-bottom: 13px;
+  }
+
+  .small-box {
+    margin-left: 0;
+    background-color: $light-grey;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+  }
+
+  .box-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 0 6px 11px;
+    width: 95%;
+    line-height: 17px;
+  }
+
+  .date {
+    font-size: 12px;
+    margin-left: 11px;
+    letter-spacing: 0.02em;
+  }
+
+  .col-4 {
+    margin-left: -8px;
+  }
+
+  .cv-box {
+    p {
+      color: $dark-grey;
+    }
+  }
+
+  .download {
+    padding-left: 10px;
+    color: $orange;
+  }
+
+  .second {
+    padding-bottom: 10px;
+  }
+
+  .moved {
+    li {
+      padding-left: 20px;
+
+      &:first-child {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .selected-click {
+    a:hover {
+      color: $orange;
+    }
+  }
+
+  @include breakpoint (tablet) {
+    .right-side {
+      padding: 0 8px 30px;
+    }
+
+    .txt {
+      letter-spacing: 0em;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .title {
+      font-size: 34px;
+    }
+
+    .txt-box {
+      width: 100%;
+      margin-left: 0;
+
+      .txt {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint (phone) {
+
+    .row {
+      padding-top: 200px;
+    }
+
+    .right-side {
+      padding: 0 0 34px;
+    }
+
+    .txt {
+      letter-spacing: 0em;
+      font-size: 13px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .txt-box {
+      margin-left: 0;
+      width: 100%;
+
+      .txt {
+        font-size: 13px;
+      }
+    }
+
+    img {
+      width: 100%;
+      border-top: 0;
+    }
+
+    .heading {
+      font-size: 13px;
+    }
+
+    .col-4 {
+      margin-left: 0;
+    }
+
+    .download {
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+    }
+
+    .title{
+      padding-top: 30px;
+      border-bottom: 5px solid $orange;
+      margin-bottom: 20px;
+    }
+
+    .cv-box {
+      padding-bottom: 50px;
+    }
+  }
+}

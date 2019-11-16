@@ -1,0 +1,23 @@
+.notification-bar {
+    position: absolute;
+    background-color: $orange;
+    text-align: center;
+    width: 100%;
+    
+    span {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+}
+
+.alert-success {
+    position: absolute;
+    background-color: $green;
+    text-align: center;
+    width: 100%;
+    
+    span {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+}

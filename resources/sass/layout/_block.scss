@@ -1,0 +1,240 @@
+//sass-lint:disable no-ids
+//sass-lint:disable no-misspelled-properties
+#block {
+  background-color: $dark-grey;
+  padding-top: 31px;
+  padding: 30px 0 9px;
+
+  .col-4 {
+    margin-bottom: 22px;
+    overflow: hidden;
+  }
+
+  .wrapp {
+    background-color: $white;
+    padding: 0 0 0 22px;
+    display: flex;
+    height: 125px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .date,
+  .heading {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 7px 27px 22px 0;
+  }
+
+  .heading {
+    margin-left: -2px;
+  }
+
+  .txt {
+    font-size: 14px;
+    font-weight: bold;
+    color: $grey;
+    width: 80%;
+  }
+
+  .txt-box {
+    float: left;
+    padding-top: 17px;
+  }
+
+  .img-box {
+    float: right;
+    background-color: $light-grey;
+    height: 100%;
+  }
+
+  .translated {
+    transform: translateY(145%);
+    padding-right: 5px;
+  }
+
+  .higher {
+    height: 100%;
+  }
+
+  .wider {
+    padding: 7px 6px 21px 0;
+  }
+
+  .slimmer {
+    width: 72%;
+    line-height: 16px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .showing {
+    margin-right: -1px;
+  }
+
+  .last-txt {
+    line-height: 22px;
+  }
+
+  .before-pic {
+    line-height: 17px;
+  }
+
+  @include breakpoint (tablet) {
+    .col-3-t {
+      padding: 0 12px;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+    .wrapp {
+      overflow: hidden;
+      border: 1px solid $orange;
+      position: relative;
+      height: 100%;
+      min-height: 159px;
+    }
+
+    .translated {
+      position: absolute;
+      right: 8px;
+      bottom: 62px;
+      z-index: 2;
+    }
+
+    .showing {
+      display: none;
+    }
+
+    .wider {
+      padding: 7px 37px 21px 0;
+    }
+
+    .slimmer {
+      width: 44%;
+    }
+
+    .img-box {
+      background-color: $white;
+      position: relative;
+    }
+
+    .higher {
+      bottom: -1px;
+      right: 0px;
+      position: absolute;
+      width: 200px;
+      height: 80%;
+    }
+
+    .before-pic {
+      width: 50%;
+    }
+
+    .sup {
+      width: 70%;
+    }
+
+    .bio {
+      top: -151px;
+      right: -6px;
+      width: 200px;
+      height: 80%;
+    }
+  }
+
+  @include breakpoint (phone) {
+    .col-1-m {
+      width: 100%;
+      border: 1px solid $orange;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+    .wrapp {
+      position: relative;
+      height: 100%;
+      min-height: 150px;
+    }
+
+    .triangle-shape {
+      display: block;
+      position: absolute;
+      right: -100px;
+    }
+
+    .img-box {
+      background-color: $white;
+      position: absolute;
+      right: 0;
+    }
+
+    .showing {
+      display: none;
+    }
+
+    .date,
+    .heading {
+      font-size: 12px;
+    }
+
+    h3 {
+      font-size: 16px;
+      padding: 5px 26px 12px 0;
+    }
+
+    .txt {
+      font-size: 12px;
+    }
+
+    .higher {
+      right: 0;
+      bottom: 0;
+      height: 80%;
+      position: absolute;
+      width: 200px;
+    }
+
+    .slimmer {
+      width: 45%;
+    }
+
+    .wider {
+      width: 70%;
+    }
+
+    .translated {
+      position: absolute;
+      z-index: 2;
+      left: -110px;
+      bottom: 61px;
+    }
+
+    .sup {
+      width: 80%;
+    }
+
+    .before-pic {
+      width: 50%;
+    }
+
+    .bio {
+      top: -145px;
+      left: -194px;
+      width: 200px;
+      height: 80%;
+    }
+  }
+}

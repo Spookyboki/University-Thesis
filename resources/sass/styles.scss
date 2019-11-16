@@ -1,0 +1,56 @@
+
+html, body, div, span, span:hover, span:active, span:focus, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, a:active, a:focus, abbr, acronym, address, big, 
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video, object, 
+button:focus, button:active, .btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline-style: none !important;
+    outline: 0 !important;
+}
+
+
+//Utilities
+// --------
+@import './utilities/reset';
+@import './utilities/colors';
+@import './utilities/mixins';
+@import './utilities/iconfont-template';
+
+//Base
+// --------
+@import './base/base';
+@import './base/grid';
+
+//Objects
+// --------
+@import './objects/text';
+@import './objects/links';
+@import './objects/breadcrumb';
+@import './objects/icons';
+@import './objects/throbbing_icon';
+@import './objects/pagination';
+@import './objects/slides';
+@import './objects/select';
+@import './objects/dropdown';
+@import './objects/search';
+@import './objects/popup';
+@import './objects/search_box';
+@import './objects/change_btn';
+@import './objects/login_form';
+@import './objects/forms';
+@import './objects/cv';
+@import './objects/notification_bar';
+
+//Layout
+// --------
+@import './layout/header';
+@import './layout/hero';
+@import './layout/footer';
+@import './layout/block';
+@import './layout/see-thru';
+@import './layout/content';
+@import './layout/left_side';
+@import './layout/right_side';
+@import './layout/projects';
+@import './layout/contact';
+

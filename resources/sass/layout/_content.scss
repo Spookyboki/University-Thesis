@@ -1,0 +1,45 @@
+//sass-lint:disable no-duplicate-properties
+.content {
+  margin-top: 132px;
+  position: relative;
+  display: flex;
+  background: -moz-linear-gradient(left, $light-grey 0%, light-grey 50%, $white 50%, $white 50%);
+  background: -webkit-linear-gradient(left, $light-grey 0%, light-grey 50%, $white 50%, $white 50%);
+  background: linear-gradient(to right, $light-grey 0%, $light-grey 50%, $white 50%,$white 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = $light-grey, endColorstr = $white,GradientType=1 );
+  border-top: 11px solid $orange;
+
+  .bolded {
+    padding-bottom: 20px;
+  }
+
+  .choose-list { 
+    a:hover {
+      color: $orange;
+    }
+  }
+
+  @include breakpoint (tablet) {
+    display: block;
+    background: $white;
+    margin-top: 32px;
+
+    .choose-list {
+      padding-left: 36px;
+    }
+  }
+
+  @include breakpoint (phone) {
+    display: block;
+    background: $white;
+    margin-top: 32px;
+
+    .choose-list {
+      margin-left: 30px;
+    }
+
+    .selected-click {
+      margin-left: 30px;
+    }
+  }
+}

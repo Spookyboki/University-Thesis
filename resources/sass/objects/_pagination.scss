@@ -1,0 +1,126 @@
+.pagination-box {
+  margin-bottom: 40px;
+
+  .pagination {
+    padding: 102px 0 52px;
+    margin-left: -4px;
+    display: inline;
+
+    .prev {
+      float: left;
+      margin: 4px 4px 0;
+    }
+
+    ul {
+      display: inline;
+      font-size: 0;
+    }
+
+    li {
+      text-align: center;
+      display: inline-block;
+      background-color: rgba(51, 51, 51, 0.9);
+      width: 163px;
+      padding: 14px 0 9px;
+      margin-right: 2px;
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .ico {
+      background-color: $orange;
+      display: inline;
+      font-size: 23px;
+      padding: 6px 13px 7px;
+    }
+
+    .s:before {
+      transform: translateY(19%);
+    }
+
+    .s-prev {
+      margin-right: 2px;
+    }
+  }
+
+  @include breakpoint (tablet) {
+    margin-bottom: 0;
+    .pagination {
+      margin-left: 0;
+      padding: 70px 0 0;
+      float: right;
+      clear: both;
+      text-align: center;
+
+      .ico {
+        padding: 0;
+      }
+
+      .s {
+        transform: rotate(90deg);
+      }
+
+      li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 2px;
+      }
+
+      .s-prev,
+      .s-play {
+        display: inline-block;
+        padding: 0;
+      }
+
+      .prev {
+        margin: -28px 0px 0;
+      }
+
+      .prev,
+      .next {
+        padding-left: 6px;
+      }
+
+      .s-play {
+        padding: 68px 12px;
+        margin: -59px 0 0 -5px;
+      }
+
+      .s-prev {
+        padding: 68px 12px;
+        margin: -79px -157px 0px -5px;
+      }
+    }
+  }
+
+  @include breakpoint (phone) {
+    display: inline-block;
+
+    .pagination {
+      display: flex;
+      padding: 40px 0 52px;
+      
+
+      li {
+        display: none;
+        background-color: $dark-grey!important;
+      }
+
+      .bg-red {
+        display: block;
+        background-color: rgba(51, 51, 51, 0.9) !important;
+      }
+
+      .next {
+        margin-top: 4px;
+      }
+
+      .prev { 
+        margin: 4px 0 0;
+      }
+    }
+  }
+}

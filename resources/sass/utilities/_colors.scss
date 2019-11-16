@@ -1,0 +1,36 @@
+$white: #fff;
+$black: #1a1a1a;
+$orange: #de812f;
+$green: #3CC243;
+$grey: #666;
+$dark-grey: #333;
+$red: #c83035;
+$light-grey: #e5e5e5;
+
+.orange {
+  color: $orange;
+}
+
+.white {
+  color: $white;
+}
+
+.grey {
+  color: $grey;
+}
+
+.darker-grey {
+  color: $dark-grey;
+}
+
+.red {
+  color: $red;
+}
+
+.bg-orange {
+  background-color: $orange !important;
+}
+
+.dark-grey{
+  color: rgba(51, 51, 51, 0.9);
+}

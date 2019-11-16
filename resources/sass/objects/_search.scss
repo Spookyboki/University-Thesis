@@ -1,0 +1,59 @@
+//sass-lint:disable no-misspelled-properties
+.searching {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background-color: $dark-grey;
+  padding: 12px 9px 12px 16px;
+  z-index: 6;
+  border: 1px solid $orange;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=90)';
+    filter: opacity(0.9);
+    -khtml-opacity: 0.9;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+
+  input {
+    padding: 7px 12px 6px 24px;
+  }
+
+  button {
+
+    background-color: $orange;
+    padding: 5px 1px 7px 1px;
+    .s-magnify {
+      font-size: 18px;
+      padding: 8px 12px 9px 10px;
+  
+      &:before {
+        transform: scaleX(-1) translateY(18%);
+      }
+    }
+  }
+
+  .icon-btns {
+    padding: 2px 2px 2px 2px;
+    &:before {
+      transform: scaleX(-1) translateY(30%);
+    }
+  }
+
+  @include breakpoint (tablet) {
+    top: 100px;
+  }
+
+  @include breakpoint (phone) {
+    top: 90px;
+    padding: 12px 9px 12px 16px;
+
+    input {
+      padding: 5px 6px 6px 8px;
+    }
+
+    .s-magnify {
+      padding: 5px 12px 8px 10px;
+    }
+  }
+}
+

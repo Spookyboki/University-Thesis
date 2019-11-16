@@ -1,0 +1,92 @@
+.nav {
+  position: relative;
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    border-top: 11px solid $orange;
+    background-color: $dark-grey;
+    padding: 0 24px 31px;
+    z-index: 5;
+
+    .txt {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 25px 0;
+      line-height: 1.2;
+    }
+
+    .row {
+      margin: 0;
+      justify-content: space-around;
+    }
+
+    .col-4 {
+      border: 1px solid $orange;
+      width: 32%;
+      margin-right: 10px;
+      text-align: center;
+      padding: 30px 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: $black;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      width: 100px;
+    }
+
+    .closing {
+      display: none;
+    }
+  }
+
+  @include breakpoint (tablet) {
+    .dropdown {
+      top: 0;
+      border: 2px solid $orange;
+
+      .closing {
+        display: block;
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        background-color: $dark-grey;
+      }
+    }
+  }
+
+  @include breakpoint (phone) {
+    .dropdown {
+      top: 0;
+      border: 2px solid $orange;
+      padding-bottom: 12px;
+
+      .closing {
+        display: block;
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        background-color: $dark-grey;
+      }
+
+      .txt {
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .col-1-m {
+        width: 100%;
+        margin: 0 0 12px;
+      }
+    }
+  }
+}

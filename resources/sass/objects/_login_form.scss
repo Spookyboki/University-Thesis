@@ -1,0 +1,89 @@
+.login-form {
+  background-color: rgba(88, 87, 87, 0.9);
+  position: absolute;
+  padding: 25px;
+  display: none;
+  border-radius: 30px;
+  right: 0;
+  bottom: 12px;
+
+  h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    }
+
+  .form-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 0 0;
+
+    label{
+      text-align: left;
+      color: $white;
+    }
+
+    input{
+      width: 200px;
+    }
+  }
+
+  .log-btn {
+    background-color: rgba(51, 51, 51, 0.9);
+    float: right;
+    padding: 8px 21px;
+    border-radius: 9px;
+    margin: 9px 5px 0 0;
+    color: $white;
+    font-size: 12px;
+    font-weight: bold;
+    &:hover {
+      background-color: rgba(88, 102, 87, 0.9);
+    }
+  }
+
+  @include breakpoint (tablet) {
+    padding: 12px;
+    right: 20px;
+
+    h3 {
+      font-size: 13px;
+      padding-bottom: 7px;
+    }
+
+    .form-field {
+      padding: 8px 5px 0 0;
+    }
+
+    label {
+      font-size: 15px;
+      padding-right: 5px;
+    }
+  }
+
+  @include breakpoint (phone) {
+    padding: 11px;
+    right: 1px;
+    bottom: -110px;
+    z-index: 20;
+    h3 {
+      font-size: 13px;
+      padding-bottom: 7px;
+    }
+
+    .form-field {
+      padding: 8px 5px 0 0;
+
+      label {
+        font-size: 14px;
+        padding-right: 5px;
+      }
+  
+      input {
+        width: 165px;
+      }
+    }
+  }
+}

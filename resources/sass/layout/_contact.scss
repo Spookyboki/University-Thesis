@@ -1,0 +1,46 @@
+.contact {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  input[type=text] , [type = mail], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 33px;
+    resize: vertical;
+  }
+    
+  input[type=submit] {
+    background-color: $orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  h1 {
+    color: $orange;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid $orange;
+    margin-bottom: 100px;
+  }
+
+  @include breakpoint (tablet) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  @include breakpoint (phone) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+  }
+}

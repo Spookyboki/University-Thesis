@@ -1,1 +1,1 @@
-# diplomski
+# University Thesis
